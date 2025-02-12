@@ -1,16 +1,19 @@
-# 这是一个示例 Python 脚本。
+import matplotlib.pyplot as plt
 
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
+# 创建一些数据
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
 
+# 创建一个图形
+plt.plot(x, y, label='y = x^2')
 
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
+# 添加标题和标签
+# plt.title("简单的 matplotlib 图")
+# plt.xlabel("X 轴")
+# plt.ylabel("Y 轴")
 
+# 添加图例
+plt.legend()
 
-# 按装订区域中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+# 显示图形
+plt.show()
